@@ -2,6 +2,8 @@
 
 - [Junit安装教程](https://www.jianshu.com/p/b7280027755c)
 - [Junit语法教程](https://www.w3cschool.cn/junit/2wjx1hvc.html)
+- [IntelliJ IDEA教程](https://blog.csdn.net/antony9118/article/details/51736135)
+- [IDEA Test coverage](https://www.jianshu.com/p/ca3b91e85fea)
 
 ## 修改JAVA_HOME
 在```/etc/profile```中修改（或添加）JAVA_HOME和PATH如下：

@@ -1,0 +1,153 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CalculatorTest</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">test.com.company</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CalculatorTest (test.com.company)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CalculatorTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/ 6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (23/ 23)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package test.com.company; 
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.company.Calculator;
+<i>4</i>&nbsp;import org.junit.Test;
+<i>5</i>&nbsp;import org.junit.Before; 
+<i>6</i>&nbsp;import org.junit.After; 
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;/** 
+<i>9</i>&nbsp;* Calculator Tester. 
+<i>10</i>&nbsp;* 
+<i>11</i>&nbsp;* @author &lt;Authors name&gt; 
+<i>12</i>&nbsp;* @since &lt;pre&gt;三月 9, 2019&lt;/pre&gt; 
+<i>13</i>&nbsp;* @version 1.0 
+<i>14</i>&nbsp;*/ 
+<b class="fc"><i>15</i>&nbsp;public class CalculatorTest { </b>
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;@Before
+<i>18</i>&nbsp;public void before() throws Exception {
+<b class="fc"><i>19</i>&nbsp;    System.out.println(&quot;Before:&quot;);</b>
+<b class="fc"><i>20</i>&nbsp;} </b>
+<i>21</i>&nbsp;
+<i>22</i>&nbsp;@After
+<i>23</i>&nbsp;public void after() throws Exception {
+<b class="fc"><i>24</i>&nbsp;    System.out.println(&quot;After.&quot;);</b>
+<b class="fc"><i>25</i>&nbsp;} </b>
+<i>26</i>&nbsp;
+<i>27</i>&nbsp;/** 
+<i>28</i>&nbsp;* 
+<i>29</i>&nbsp;* Method: address(String input, String text) 
+<i>30</i>&nbsp;* 
+<i>31</i>&nbsp;*/ 
+<i>32</i>&nbsp;@Test
+<i>33</i>&nbsp;public void testAddress() throws Exception {
+<b class="fc"><i>34</i>&nbsp;    Calculator cal = new Calculator();</b>
+<b class="fc"><i>35</i>&nbsp;    System.out.println(cal.address(&quot;cle&quot;, &quot;1/2+3-1&quot;));</b>
+<b class="fc"><i>36</i>&nbsp;    System.out.println(cal.address(&quot;del&quot;, &quot;1+2+3*4&quot;));</b>
+<b class="fc"><i>37</i>&nbsp;    System.out.println(cal.address(&quot;2&quot;, &quot;1+2&quot;));</b>
+<b class="fc"><i>38</i>&nbsp;    System.out.println(cal.address(&quot;=&quot;, &quot;1+2&quot;));</b>
+<b class="fc"><i>39</i>&nbsp;} </b>
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;/** 
+<i>42</i>&nbsp;* 
+<i>43</i>&nbsp;* Method: calculate(String input) 
+<i>44</i>&nbsp;* 
+<i>45</i>&nbsp;*/ 
+<i>46</i>&nbsp;@Test
+<i>47</i>&nbsp;public void testCalculate() throws Exception {
+<b class="fc"><i>48</i>&nbsp;    Calculator cal = new Calculator();</b>
+<b class="fc"><i>49</i>&nbsp;    System.out.println(cal.calculate(&quot;1+2&quot;));</b>
+<b class="fc"><i>50</i>&nbsp;    System.out.println(cal.calculate(&quot;3*2&quot;));</b>
+<b class="fc"><i>51</i>&nbsp;    System.out.println(cal.calculate(&quot;12/3&quot;));</b>
+<b class="fc"><i>52</i>&nbsp;    System.out.println(cal.calculate(&quot;-1+3&quot;));</b>
+<b class="fc"><i>53</i>&nbsp;} </b>
+<i>54</i>&nbsp;
+<i>55</i>&nbsp;/** 
+<i>56</i>&nbsp;* 
+<i>57</i>&nbsp;* Method: operation(String left, String right, String op) 
+<i>58</i>&nbsp;* 
+<i>59</i>&nbsp;*/ 
+<i>60</i>&nbsp;@Test
+<i>61</i>&nbsp;public void testOperation() throws Exception { 
+<b class="fc"><i>62</i>&nbsp;    Calculator cal = new Calculator();</b>
+<b class="fc"><i>63</i>&nbsp;    System.out.println(cal.operation(&quot;2&quot;, &quot;3&quot;, &quot;+&quot;));</b>
+<b class="fc"><i>64</i>&nbsp;    System.out.println(cal.operation(&quot;9&quot;, &quot;4&quot;, &quot;-&quot;));</b>
+<b class="fc"><i>65</i>&nbsp;    System.out.println(cal.operation(&quot;3&quot;, &quot;4&quot;, &quot;*&quot;));</b>
+<b class="fc"><i>66</i>&nbsp;    System.out.println(cal.operation(&quot;6&quot;, &quot;3&quot;, &quot;/&quot;));</b>
+<b class="fc"><i>67</i>&nbsp;} </b>
+<i>68</i>&nbsp;
+<i>69</i>&nbsp;
+<i>70</i>&nbsp;} 
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2019-03-09 13:48</div>
+</div>
+</body>
+</html>

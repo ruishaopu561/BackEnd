@@ -5,7 +5,10 @@
 > > > * Carry out your optimization solution
 > * Write down your investigation and solution in Markdown.
 > > * submit to your repo.
-## Open
-We can open develop tools of browser with ```F12```or ```Ctrl+Shift+I```.  
-## First Load
-before we load the home page oh SJTU, we can see there are only one ```js``` file running.
+## SJTU
+
+## Reference
+- [SJTU](http://electsys.sjtu.edu.cn/edu/)
+- [FU](http://www.fudan.edu.cn/mindex.html)
+- [THU](http://www.tsinghua.edu.cn/publish/thu2018en/index.html)
+- [PKU](http://english.pku.edu.cn/)

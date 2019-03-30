@@ -1,10 +1,4 @@
 # Homework 2
-> * How to use F12
-> > * Analyze the home page loading of SJTU
-> > > * Compare with other website home pages 
-> > > * Carry out your optimization solution
-> * Write down your investigation and solution in Markdown.
-> > * submit to your repo.
 ## Network
 ### SJTU
 ![First Loading](https://github.com/ruishaopu561/BackEnd/tree/master/hw2/1.jpg)
@@ -14,16 +8,6 @@
 ![First Loading](https://github.com/ruishaopu561/BackEnd/tree/master/hw2/3.jpg) 
 ### PKU
 ![First Loading](https://github.com/ruishaopu561/BackEnd/tree/master/hw2/4.jpg)
-
-## Performance
-### SJTU
-![First Loading](https://github.com/ruishaopu561/BackEnd/tree/master/hw2/1.jpg)
-### FU
-![First Loading](https://github.com/ruishaopu561/BackEnd/tree/master/hw2/2.jpg) 
-### THU
-![First Loading](https://github.com/ruishaopu561/BackEnd/tree/master/hw2/3.jpg) 
-### PKU
-![First Loading](https://github.com/ruishaopu561/BackEnd/tree/master/hw2/8.png)
 
 ## Advantage/Disadvantages
 ### advantage

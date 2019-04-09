@@ -3,14 +3,14 @@
 ### process
 1.进入/etc/mysql/目录， 并用root权限打开debian.cnf文件  
 2.使用这个文件中的用户名和密码进入mysql  
-```mysql -u debian-sys-maint -p```
+```mysql -u debian-sys-maint -p```  
 3.选择mysql数据库  
 ```use mysql;```  
-4.显示表中的列
+4.显示表中的列  
 ```show fields from user;```
-```authentication_string```这列就是密码
+```authentication_string```这列就是密码  
 5.修改密码  
-```update mysql.user set authentication_string=password('new password') where user='root'```
+```update mysql.user set authentication_string=password('new password') where user='root'```  
 6.退出  
 7.重启  
 ```service mysql restart```

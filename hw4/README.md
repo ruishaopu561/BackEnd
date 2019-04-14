@@ -161,6 +161,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 > * ```permitAll()```结果始终为true
 > * ```principal()```用户的principal对象
 
+## Problems encountered in this hw
+
+### SpringBoot Test Procedure
+
+开头加入这两个annotations
+
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest
+```
+
+就能取到spring中的容器的实例，如果配置了@Autowired那么就自动将对象注入。
+
+```@ContextConfiguration```可以指定测试的class. eg:
+
+```java
+@ContextConfiguration(classes = WordladderController.class)
+```
+
 ## Useful Websites from Ren rui
 
 ### Spring Boot

@@ -42,24 +42,26 @@ public class WordladderControllerTest {
     public void ladderTest() throws Exception {
         Wordladder wl = new Wordladder();
 
-        String output = mvc.perform(get("/ladder")
-                .param("b", "cat")
-                .param("e", "dog")
-                .accept(MediaType.parseMediaType("application/json;charset=UTF-8")))
-                .andExpect(status().isOk())
-                .andExpect(content().contentType("application/json;charset=UTF-8"))
-                .andDo(print())
-                .andReturn().getResponse().getContentAsString();
-        Assert.assertEquals(output, wl.ss("cat", "dog"));
+        for (int i=0; i<100; i++){
+            String output = mvc.perform(get("/ladder")
+                    .param("b", "cat")
+                    .param("e", "dog")
+                    .accept(MediaType.parseMediaType("application/json;charset=UTF-8")))
+                    .andExpect(status().isOk())
+                    .andExpect(content().contentType("application/json;charset=UTF-8"))
+                    .andDo(print())
+                    .andReturn().getResponse().getContentAsString();
+            Assert.assertEquals(output, wl.ss("cat", "dog"));
 
-        output = mvc.perform(get("/ladder")
-                .param("b","happy")
-                .param("e","steop")
-                .accept(MediaType.parseMediaType("application/json;charset=UTF-8")))
-                .andExpect(status().isOk())
-                .andExpect(content().contentType("application/json;charset=UTF-8"))
-                .andDo(print())
-                .andReturn().getResponse().getContentAsString();
-        Assert.assertEquals(output, wl.ss("happy", "steop"));
+            output = mvc.perform(get("/ladder")
+                    .param("b","happy")
+                    .param("e","steop")
+                    .accept(MediaType.parseMediaType("application/json;charset=UTF-8")))
+                    .andExpect(status().isOk())
+                    .andExpect(content().contentType("application/json;charset=UTF-8"))
+                    .andDo(print())
+                    .andReturn().getResponse().getContentAsString();
+            Assert.assertEquals(output, wl.ss("happy", "steop"));
+        }
     }
 }

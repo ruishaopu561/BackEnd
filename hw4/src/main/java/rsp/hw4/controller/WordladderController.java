@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class WordladderController {
-    private static final String template = "Hello, %s!";
 
     @RequestMapping("/ladder")
     public String ladder(@RequestParam(value = "b") String begin,

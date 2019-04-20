@@ -27,8 +27,17 @@ Memory
 
 ## 运行多个指令
 
-CPU
-![CPU](https://github.com/ruishaopu561/BackEnd/blob/master/task2/5.png)
+### 连续40个指令
 
-Memory
+![CPU](https://github.com/ruishaopu561/BackEnd/blob/master/task2/7.png)
+![Memory](https://github.com/ruishaopu561/BackEnd/blob/master/task2/8.png)
+
+### 连续100个指令
+
+![CPU](https://github.com/ruishaopu561/BackEnd/blob/master/task2/9.png)
+![Memory](https://github.com/ruishaopu561/BackEnd/blob/master/task2/10.png)
+
+### 连续200个指令
+
+![CPU](https://github.com/ruishaopu561/BackEnd/blob/master/task2/5.png)
 ![Memory](https://github.com/ruishaopu561/BackEnd/blob/master/task2/6.png)

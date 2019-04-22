@@ -42,7 +42,7 @@ public class WordladderControllerTest {
     public void ladderTest() throws Exception {
         Wordladder wl = new Wordladder();
 
-        for (int i=0; i<50; i++){
+        for (int i=0; i<1; i++){
             String output = mvc.perform(get("/ladder")
                     .param("b", "cat")
                     .param("e", "dog")

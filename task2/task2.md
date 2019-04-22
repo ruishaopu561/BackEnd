@@ -8,7 +8,6 @@
     · Get the CPU, Memory consumption of it when there is no requests
     · With the increasing reauests, find out the trend of each resource utilization
 ```
-
 ## 不运行任何指令的时候
 
 CPU
@@ -41,3 +40,7 @@ Memory
 
 ![CPU](https://github.com/ruishaopu561/BackEnd/blob/master/task2/5.png)
 ![Memory](https://github.com/ruishaopu561/BackEnd/blob/master/task2/6.png)
+
+## Test with Prometheus
+- [Test with Prometheus](http://localhost:3000/dashboard/snapshot/zxVVSMZpSafeWLaG3aqYPTZP2z8CaVbE)  
+不知道上面的link能不能打开，不能的话，本文件同目录还有相应的json文件可以导入。

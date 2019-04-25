@@ -173,8 +173,7 @@ docker tag daa11948e23d load:tag
     docker build - < <dockerfile> 使用指定的dockerfile配置文件，docker以stdin方式获取内容，使用此配置生成新的image
     docker port <container> <container port> 查看本地哪个端口映射到container的指定端口，其实用docker ps 也可以看到
 ```
-![一张图总结 Docker 的命令](https://github.com/ruishaopu561/BackEnd/tree/master/task3/2.png)
-
+![一张图总结 Docker 的命令](https://github.com/ruishaopu561/BackEnd/blob/master/task3/2.png)
 
 ## Reference
 [Docker的安装配置及使用详解](https://my.oschina.net/henrylee2cn/blog/821532)

@@ -1,6 +1,6 @@
 # Docker
 
-[My docker repo](https://cloud.docker.com/u/ruishaopu561/repository/docker/ruishaopu561/wordladder)
+[My docker repo](https://hub.docker.com/r/ruishaopu561/wordladder)
 
 ## 教程
 ### Download

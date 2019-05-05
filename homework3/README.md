@@ -25,3 +25,7 @@ run login
 docker run -d -p 8900:8900 --name=login ruishaopu561/login
 ```
 运行后通过```http://localhost:8700/ladder?u=admin&p=123&b=cat&e=dog```来访问服务，wordladder会接收4个参数，分别是用户名，密码，两个word，用户名和密码会被发送到login服务接收验证，正确后才会尝试生成wordladder。
+
+## Reference
+[wordladder](https://hub.docker.com/r/ruishaopu561/homework3)  
+[login](https://hub.docker.com/r/ruishaopu561/login)

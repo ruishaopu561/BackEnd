@@ -11,9 +11,10 @@ login的端口为8900，wordladder的端口为8700
 源码：分开的两个项目分别在login和homework3目录下
 
 ## pull images from docker hub
+```
 docker pull ruishaopu561/homework3
 docker pull ruishaopu561/login
-
+```
 ## run images
 run wordladder
 ```

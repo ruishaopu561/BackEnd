@@ -20,7 +20,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 ### 编辑镜像
 ```
-docker build -t ruishaopu561/wordladder
+docker build -t ruishaopu561/wordladder .
 ```
 通过```docker images```查看镜像
 ### 运行
@@ -38,7 +38,7 @@ docker rmi image-id
 ```
 #### 查看容器日志
 ```
-docker logs    container-name /container-id
+docker logs container-name /container-id
 ```
 #### 导入导出容器
 ```

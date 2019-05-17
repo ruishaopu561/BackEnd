@@ -1,15 +1,10 @@
-language: python
-- 2.7
-- 3.2
-- 3.5
+language: java
+jdk: 
+ - openjdk8
 
 services:
 - docker
 - redis-server
 
-install: 
-- docker build -t blog .
-- docker run -d -p 127.0.0.1:80:80 --name blog blog
- 
-script: 
-- docker ps | grep -q blog
+install: cd task3/task3 && mvn install -DskipTests=true -Dmaven.javadoc.skip=true
+script: mvn test

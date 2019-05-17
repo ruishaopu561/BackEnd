@@ -36,7 +36,7 @@ export PATH=${M2_HOME}/bin:$PATH
 重点在后两句，前四句均是jdk路径。  
 ```source /etc/profile```激活后方能用```mvn -v```和```java -version```验证是否安装正确。
 ## 安装配置tomcat
-官网地址(http://tomcat.apache.org/download-80.cgi)
+[官网地址](http://tomcat.apache.org/download-80.cgi)
 ubuntu下载zip或tar.gz格式，下载下来后解压到```/opt```文件夹内, 进入到```apache-tomcat-8.5.39```(这是我的版本名)中
 ```sudo vim ./bin/startup.sh```以及```sudo vim ./bin/shutdown.sh```在两文件中  
 配置路径如下(写在开头)

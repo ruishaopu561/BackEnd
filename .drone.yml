@@ -1,13 +1,13 @@
 workspace:
         base: /go
-        path: ./task3/task3 
+        path: Backend/task3/task3 
 
 kind: pipeline
 name: default
 
 steps:
 - name: test
-  image: maven:8-jdk-10
+  image: maven:3-jdk-10
   command:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true
   - mvn test

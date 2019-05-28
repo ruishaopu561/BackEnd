@@ -23,7 +23,28 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+<<<<<<< HEAD
             <artifactId>spring-boot-starter-web</artifactId>
+=======
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+>>>>>>> c7c56f8eecf1c23c28b1278df2403d1e9155a3c4
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -35,11 +56,14 @@
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-commons</artifactId>
             <version>2.1.1.RELEASE</version>
         </dependency>
+=======
+>>>>>>> c7c56f8eecf1c23c28b1278df2403d1e9155a3c4
     </dependencies>
 
     <dependencyManagement>
@@ -59,6 +83,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
+=======
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+>>>>>>> c7c56f8eecf1c23c28b1278df2403d1e9155a3c4
             </plugin>
         </plugins>
     </build>

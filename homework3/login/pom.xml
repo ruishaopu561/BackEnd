@@ -80,7 +80,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.1.6.RELEASE</version>
+            <version>6.0.0</version>
 >>>>>>> c7c56f8eecf1c23c28b1278df2403d1e9155a3c4
         </dependency>
     </dependencies>
